@@ -3,8 +3,7 @@ package classes;
 class Pessoa{
 	
 	int id;
-	String primeiroNome;
-	String sobrenome;
+	String nome;
 	float peso;
 	float altura;
 	
