@@ -15,7 +15,7 @@ class Agua {
 		System.out.println(dura.dura()); //Exibe e executa o objeto dura e método .dura()
 	}
 	
-	//Sub Classe, Classe no mesmo arquivo da classe principal
+	//Sub Classe, Classe dentro da classe principal
 	class Dura {
 		public String dura(){
 			return "Agua dura";
@@ -23,3 +23,5 @@ class Agua {
 	}
 }
 
+//Podemos ter mais de uma classe paralela em um mesmo arquivo,
+//mas não é uma boa prática
