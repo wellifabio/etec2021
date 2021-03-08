@@ -1,0 +1,46 @@
+package basico;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainList {
+
+	//Atributo, instância da classe Animais tipo Lista
+	static ArrayList<Animal> animais;
+	//Atributo, instância da classe Scanner
+	static Scanner leia;
+	//Atributo da classe Animal, para ler um animal por vez
+	static Animal animal;
+	
+	public static void main(String[] args) {
+		 
+		leia = new Scanner(System.in); 
+		animais = new ArrayList<>();
+		int controle = 0;
+		String leitura = "";
+		
+		//Procedimento para a leitura da lista de animais em forma de tabela
+		System.out.println("Especie\tRaça\tNome\tPeso\tcontrole"); //Cabeçalho
+		while(controle == 0) {//Laço para cada linha da tabela
+			
+			leitura = leia.nextLine();
+			String[] vetor = leitura.split(",");
+			
+			animal = new Animal();
+			animal.especie = vetor[0];
+			animal.raca = vetor[1];
+			animal.nome = vetor[2];
+			animal.peso = Float.parseFloat(vetor[3]);
+			animais.add(animal);
+			
+			controle = Integer.parseInt(vetor[4]); //0 para continuar e 1 para sair
+		}
+		
+		for(int i = 0; i < animais.size(); i++) {
+			System.out.println(animais.get(i).show());
+		}
+		
+
+	}
+
+}

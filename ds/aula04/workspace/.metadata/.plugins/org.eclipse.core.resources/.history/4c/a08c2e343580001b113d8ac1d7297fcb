@@ -1,0 +1,16 @@
+package basico;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Animal animal;
+		animal = new Animal();
+			
+		System.out.println(animal.especie);
+		System.out.println(animal.raca);
+		System.out.println(animal.nome);
+		System.out.println(animal.peso);
+
+	}
+
+}

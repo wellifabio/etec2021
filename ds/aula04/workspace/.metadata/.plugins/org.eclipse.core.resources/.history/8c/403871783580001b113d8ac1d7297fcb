@@ -1,0 +1,31 @@
+package basico;
+
+public class Animal {
+
+	String especie;
+	String raca;
+	String nome;
+	float peso;
+	
+	//Construtor simples
+	public Animal() {
+		especie = "Gato";
+		nome = "Mimi";
+		raca = "Angorá";
+		peso = (float) 1.2;
+	}
+	
+	//Construtor com parâmetros, personalizar
+	public Animal(String especie, String nome, String raca, float peso) {
+		especie = especie;
+		nome = nome;
+		raca = raca;
+		peso = peso;
+	}
+	
+	//Metodo que obtem todos os parâmetros
+	public Show() {
+		return e
+	}
+	
+}

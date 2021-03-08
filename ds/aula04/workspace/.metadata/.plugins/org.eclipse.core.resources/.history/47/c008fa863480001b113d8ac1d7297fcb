@@ -1,0 +1,15 @@
+package basico;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Animal animal;
+		animal = new Animal();
+		
+		animal.nome = "Mimi";
+		
+		System.out.println(animal.nome);
+
+	}
+
+}

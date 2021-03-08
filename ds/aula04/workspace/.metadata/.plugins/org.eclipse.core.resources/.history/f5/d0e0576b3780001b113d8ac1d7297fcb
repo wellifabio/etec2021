@@ -1,0 +1,10 @@
+package basico;
+
+public class MainList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
