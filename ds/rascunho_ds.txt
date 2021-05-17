@@ -31,7 +31,7 @@ Polimorfismo;
 Classes abstratas e interfaces;
 Namespaces, organização de classes e pacotes. 
  
-Padrão de projeto MVC (Model-View-Controller) 
+Padrão de projeto MVC (Model-View-Controller)
  
 Construção de interface gráfica com o usuário (GUI)
 Caixas de Diálogo;

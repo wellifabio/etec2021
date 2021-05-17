@@ -1,0 +1,15 @@
+Criar um programa que receba como entrada um valor.
+E retorne como saída o menor número de notas e ou moedas.
+Exemplo:
+Entrada
+245.47
+Saída
+2 notas de cem reais
+2 notas de vinte reais
+1 nota de cinco reais
+1 moeda de vinte e cinco centavos
+2 moedas de dez centavos
+2 moedas de 1 centavo
+
+Pensamento computacional
+Decompor, Encontrar padrões, Abtrair, Algoritmo
