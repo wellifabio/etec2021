@@ -32,7 +32,8 @@ public class ProcessaTabelaINSS {
 		double calculo = 900.7;
 		for(INSS i: ProcessaTabelaINSS.getTabINSS()) {
 			if(salario.getSalario() < i.getContribuicao()) {
-				calculo = salario.getSalario() * i.getAliquota(); 
+				calculo = salario.getSalario() * i.getAliquota();
+				break;
 			}
 		}
 		return calculo;
