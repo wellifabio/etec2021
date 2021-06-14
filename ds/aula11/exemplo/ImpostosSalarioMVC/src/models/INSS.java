@@ -30,30 +30,6 @@ public class INSS {
 	}
 
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		long temp;
-		temp = Double.doubleToLongBits(contribuicao);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		INSS other = (INSS) obj;
-		if (Double.doubleToLongBits(contribuicao) != Double.doubleToLongBits(other.contribuicao))
-			return false;
-		return true;
-	}
-
-	@Override
 	public String toString() {
 		return "R$ "+contribuicao + "\t" + String.format("%.1f",(aliquota * 100)) + "%;";
 	}
