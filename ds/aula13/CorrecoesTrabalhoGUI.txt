@@ -1,0 +1,5 @@
+Todos da turma até o momento fizeram sobre Orçamento
+Em grupos, com tela Gráfica java swing e MVC
+Alguns retornaram o produto mais barato
+Outros o menor valor
+Apenas dois alunos ainda não entregaram
