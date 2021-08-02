@@ -1,0 +1,25 @@
+package testesarquivo;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
+public class LerEEscreverTXT {
+	
+	BufferedReader br;
+	BufferedWriter bw;
+	String arquivo = "./bd/arquivo.txt";
+	
+	void salvar(String conteudo) {
+		try {
+			bw = new BufferedWriter(new FileWriter(arquivo,true));
+			bw.write(conteudo);
+			bw.close();
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null, "Erro ao salvar aquivo:"+e);
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package testesarquivo;
+
+public class teste {
+
+	static LerEEscreverTXT ler;
+	
+	public static void main(String[] args) {	
+
+	}
+
+}

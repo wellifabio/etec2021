@@ -1,0 +1,13 @@
+package testesarquivo;
+
+public class teste {
+
+	static LerEEscreverTXT ler;
+	
+	public static void main(String[] args) {	
+		ler = new LerEEscreverTXT();
+		String texto = "Esta é uma linha de conteúdo do arquivo";
+		ler.salvar(texto);
+	}
+
+}

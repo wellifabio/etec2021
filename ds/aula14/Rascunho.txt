@@ -1,0 +1,21 @@
+	Manipulação de arquivos de TXT
+
+	BufferedReader //Espaço de memória para leitura de arquivos
+	BufferedWriter //Espaço de memória para gravação de arquivos
+	
+	FileReader e FileWriter
+
+	Exemplo comentado está na workspace
+
+	SGBD (Sistemas Gerenciadores de Banco de Dados)
+	MySQL MariaDB, Postgreee, SQL Server, Oracle, DB2
+	
+	Linguagem SQL (DDL DML)
+	
+	NoSQL (MongoDB) JSON
+	
+	Estruturas TXT, CSV, XML, JSON, SQL 
+	Bancos de dados Relacionais
+	
+	GUI - Graphics User Interface
+	MVC - Model View Control

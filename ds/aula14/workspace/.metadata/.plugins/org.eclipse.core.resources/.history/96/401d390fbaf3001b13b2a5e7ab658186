@@ -1,0 +1,15 @@
+package testesarquivo;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class teste extends JFrame implements ActionListener{
+	
+	static LerEEscreverTXT ler;
+	
+	public static void main(String[] args) {	
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package testesarquivo;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+
+public class LerEEscreverTXT {
+	
+	BufferedReader br;
+	BufferedWriter bw;
+	String arquivo = "./bd/arquivo";
+	
+}
