@@ -1,0 +1,6 @@
+1 - Crie um botão que ao ser clicado mostre o total de linhas este arquivo possui.
+2 - Crie um botão que ao ser clicado salve o arquivo com outro nome ex:"backup"
+3 - Crie um botão que salve todo o texto da área de texto em Maiúsculas.
+4 - Crie um botão que conte quantos caracteres existe neste arquivo.
+5 - Crie um botão que abra uma janela para o usuário escolher onde quer salvar o arquivo.
+6 - Crie um botão que abra uma janela para o usuário escolher qualquer arquivo de texto txt em seu computador para ser salvo.
