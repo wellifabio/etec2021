@@ -1,0 +1,9 @@
+Estruturas universais para conexão com Banco de Dados(2021).
+
+TXT
+Excel
+CSV
+XML
+JSON
+
+Estes formatos de arquivos, permitem a comunicação entre aplicações
