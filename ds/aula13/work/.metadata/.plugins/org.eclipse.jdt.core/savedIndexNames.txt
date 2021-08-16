@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+E:\users\desktpop\work\.metadata\.plugins\org.eclipse.jdt.core
