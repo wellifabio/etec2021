@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
-import models.utils.CPF;
-import models.utils.Nome;
-import models.utils.Telefone;
+import models.util.CPF;
+import models.util.Nome;
+import models.util.Telefone;
 
 /*
  * Este projeto será um CRUD exemplo com arquivo texto
@@ -24,8 +24,8 @@ public class Cliente {
 
 	// Construtores
 	public Cliente() {
-		String[] nomes = { "João", "Maria", "Ana", "José" };
-		String[] sobrenomes = { "Silva", "da Silva", "Souza", "de Souza", "Mello" };
+		String[] nomes = { "João", "Maria", "Ana", "José", "Marha", "Ana Paula", "Murilo" };
+		String[] sobrenomes = { "Silva", "da Silva", "Souza", "de Souza", "Mello", "Barros", "Oliveira", "Martins" };
 		this.cpf = new CPF().getFormat();
 		this.nome = new Nome(nomes, sobrenomes).getAleatorio();
 		for (int i = 0; i < new Random().nextInt(3); i++)
@@ -38,14 +38,18 @@ public class Cliente {
 		this.nome = vetor[1];
 		if(vetor.length > 2) {
 			String[] tels = vetor[2].split(",");
-			if(tels.length > 1)
+			if(tels.length >= 1)
 				for(String t: tels)
 					telefones.add(t);
 		}
 	}
 
-	public Cliente(String cpf, String nome, ArrayList<String> telefones) {
-		super();
+	public Cliente(String cpf, String nome, String tels) {
+		ArrayList<String> telefones = new ArrayList<String>();
+		String[] vetor = tels.split(",");
+		for(String t: vetor) {
+			telefones.add(t);
+		}
 		this.cpf = cpf;
 		this.nome = nome;
 		this.telefones = telefones;
@@ -112,6 +116,15 @@ public class Cliente {
 		if(tels.length()>1)//Remove a ultima virgula
 			tels = tels.substring(0, tels.length()-1);
 		return cpf + ";" + nome + ";" + tels + "\r\n";
+	}
+	
+	public String[] toVetor() {
+		String tels = "";
+		for (String t : this.telefones)
+			tels += t + ",";
+		if(tels.length()>1)//Remove a ultima virgula
+			tels = tels.substring(0, tels.length()-1);
+		return new String[] { cpf, nome, tels };
 	}
 
 }

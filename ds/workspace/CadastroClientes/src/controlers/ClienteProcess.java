@@ -22,7 +22,6 @@ public class ClienteProcess {
 		clientes = new ArrayList<>();
 		for(int i = 0; i < n; i++) {
 			clientes.add(new Cliente());
-		}
+		}		
 	}
-
 }
